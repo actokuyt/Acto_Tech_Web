@@ -82,16 +82,11 @@ export const MobileNavMenu = styled.div`
   right: 0;
   display: none;
   align-items: center;
-  /* Second Nav */
-  /* margin-right: 24px; */
-  /* Third Nav */
-  /* width: 100vw;
-  white-space: nowrap; */
   @media screen and (max-width: 768px) {
     display: block;
     height: 100%;
-    width: 40%;
-    background-color: #333;
+    width: 100%;
+    background-color: rgba(255 255 255 .9);
   }
   @media screen and (max-width: 425px) {
     width: 55%;

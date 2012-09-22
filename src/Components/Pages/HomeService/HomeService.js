@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import img from '../../../Media/store.jpg'
+import img from '../../../Media/delivery.jpg'
 import { BrowserRouter as Router, } from 'react-router-dom';
 import { NavLink as Link } from 'react-router-dom';
 
@@ -27,12 +27,11 @@ const Card = styled.div`
         width: 90%;
     }
 `
-
 const Content = styled.div`
     width: 60%;
     margin: auto;
     text-align: center;
-    padding: 5% 0;
+    padding: 10% 0;
     @media screen and (max-width: 768px) {
         width: 90%;
         padding: 15% 0;
@@ -50,29 +49,24 @@ const NavLink = styled(Link)`
   }
 `
 
-const Button = styled.button`
-  background: #333;
-  color: #ddd;
-  border: 1px solid #333;
-  border-radius: 2px;
-  padding: 6px;
-`
-
-export class Store extends Component {
+export class PickUp extends Component {
     render() {
         return (
             <Router>
                 <Container >
                     <Card>
                         <Content>
-                            <h1>Store</h1>
+                            <h1>Home Service</h1>
                             <p>
-                                Acto Technologies is the top retail company for affordable and durable mobile phones, computers, parts and accessories. We are happy you are here today, and we'll like to show you our stock. Let's jump right in.
+                                Acto Technologies is deeply concerned with the comfort and satisfaction of her customers, as such we offer state of the art <b>Home Service</b> to our customers at very affordable rates. To use this service,
                             </p>
                         </Content>
                         <Content>
-                                <NavLink to='/shop' activeStyle >
-                                    <Button>Walk Into Shop</Button>
+                                <NavLink to='/sign-up' activeStyle >
+                                    <i>Sign-up </i>
+                                </NavLink>|
+                                <NavLink to='/sign-in' activeStyle >
+                                    <i>Sign-in</i>
                                 </NavLink>
                         </Content>
                     </Card>
@@ -82,4 +76,4 @@ export class Store extends Component {
     }
 }
 
-export default Store
+export default PickUp

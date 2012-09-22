@@ -23,7 +23,7 @@ const Card = styled.div`
     box-shadow: 2px 2px 9px #333;
     @media screen and (max-width: 768px) {
         margin: 20% auto;
-        width: 90%;
+        width: 98%;
     }
 `
 

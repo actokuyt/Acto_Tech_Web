@@ -6,7 +6,7 @@ import NavBar from './Components/NavBar/NavBar';
 import Landing from './Components/Pages/Landing/Landing';
 import Store from './Components/Pages/Store/Store';
 // import Workshop from './Components/Pages/Workshop/Workshop';
-import PickUp from './Components/Pages/Pick_up/PickUp';
+import PickUp from './Components/Pages/HomeService/HomeService';
 import About from './Components/Pages/About/About';
 import Contact from './Components/Pages/Contact/Contact';
 

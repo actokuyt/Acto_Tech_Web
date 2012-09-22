@@ -1,9 +1,8 @@
 import React, { Component } from 'react' 
 import { BrowserRouter as Router, } from 'react-router-dom';
-import {Nav,NavLink,Bars,NavMenu, } from './NavBarElements';
-import MobileNavBarMenu from './MobileNavBarMenu' 
+import {Nav,NavLink,Bars,NavMenu,MobileNavMenu,MobileNavLink } from './NavBarElements';
+import styled from 'styled-components';
 import logo from '../../Media/logo.png'
-
 
 
 export class NavBar extends Component {
@@ -18,6 +17,35 @@ export class NavBar extends Component {
       isMenuOpen: !isMenuOpen
     })
 
+    const Container = styled.div`
+    width: 40%;
+    background: #333;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    `
+
+    function MobileNavBarMenu() {
+      return (
+          <div>
+          <MobileNavMenu onClick = {handleBarClick}  >
+            <Container>
+              <MobileNavLink to='/pick-up' activeStyle>
+                Pick-up and Delivery
+              </MobileNavLink>
+              <MobileNavLink to='/contact' activeStyle>
+                Contact
+              </MobileNavLink>
+              <MobileNavLink to='/about' activeStyle>
+                About
+              </MobileNavLink>
+            </Container>
+          </MobileNavMenu>
+          </div>
+      )
+    }
+
+
     return (
       <Router>
         <Nav> 
@@ -25,8 +53,8 @@ export class NavBar extends Component {
                 <img src={logo} alt = '' style = {{height: '2.5em',}} />
           </NavLink>
           <NavMenu>
-            <NavLink to='/pick-up' activeStyle>
-              Pick-up and Delivery
+            <NavLink to='/home' activeStyle>
+              Home Service
             </NavLink>
             <NavLink to='/contact' activeStyle>
               Contact
