@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import img from '../../../Media/test.jpg'
+import img from '../../../Media/delivery.jpg'
 
 
-export const Container = styled.div`
+const Container = styled.div`
  background: url(${img});
  background-size: cover;
  background-attachment: fixed;
@@ -12,14 +12,17 @@ export const Container = styled.div`
  margin: auto;
  padding: 1em;
  height: 100vh;
- box-shadow: 5px 5px 9px #333;
 `
 
-export const Card = styled.div`
+const Card = styled.div`
     background: #ddd;
     width: 70%;
     height: 70%;
-    margin: 15% auto;
+    margin: 8% auto;
+    box-shadow: 2px 2px 9px #333;
+    @media screen and (max-width: 768px) {
+        margin: 20% auto;
+    }
 `
 
 export class PickUp extends Component {

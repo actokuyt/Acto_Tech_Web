@@ -4,7 +4,7 @@ import LandingCarousel from './LandingCarousel'
 import styled from 'styled-components'; 
 
 
-export const LandingOverlay = styled.div`
+const LandingOverlay = styled.div`
     height: 100vh;
     width: 100vw;
     box-shadow: 0px 1px 9px #666;
@@ -12,7 +12,7 @@ export const LandingOverlay = styled.div`
     background: rgba(255,255,255,0.5);
 `
 
-export const Carousel = styled.div`
+const Carousel = styled.div`
 width: 45%;
 margin: auto;
 position: relative;
