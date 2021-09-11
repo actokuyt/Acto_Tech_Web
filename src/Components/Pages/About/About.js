@@ -22,16 +22,16 @@ export const Card = styled.div`
     margin: 15% auto;
 `
 
-export class PickUp extends Component {
+export class About extends Component {
     render() {
         return (
-            <Container >
+            <Container>
                 <Card>
-                    <h1>pickup</h1>
+                    <h1>About</h1>
                 </Card>
             </Container>
         )
     }
 }
 
-export default PickUp
+export default About

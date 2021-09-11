@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, } from 'react-router-dom';
 import {Nav,NavLink,Bars,NavMenu, } from './NavBarElements';
 import MobileNavBarMenu from './MobileNavBarMenu' 
-import logo from '../../Images/logo.svg'
+import logo from '../../Media/logo.svg'
 
 
 

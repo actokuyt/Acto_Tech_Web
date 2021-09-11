@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+// import {Container, Card } from '../Pick_up/PickUp'
 import styled from 'styled-components'
-import img from '../../../Media/test.jpg'
+import img from '../../../Media/test2.jpg'
 
 
-export const Container = styled.div`
+const Container = styled.div`
  background: url(${img});
  background-size: cover;
  background-attachment: fixed;
@@ -12,7 +13,6 @@ export const Container = styled.div`
  margin: auto;
  padding: 1em;
  height: 100vh;
- box-shadow: 5px 5px 9px #333;
 `
 
 export const Card = styled.div`
@@ -22,16 +22,16 @@ export const Card = styled.div`
     margin: 15% auto;
 `
 
-export class PickUp extends Component {
+export class Contact extends Component {
     render() {
         return (
-            <Container >
+            <Container>
                 <Card>
-                    <h1>pickup</h1>
+                    <h1>Contact</h1>
                 </Card>
             </Container>
         )
     }
 }
 
-export default PickUp
+export default Contact

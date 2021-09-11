@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LandingMedia from '../../../Images/LandingMedia.mp4'
+import LandingMedia from '../../../Media/LandingMedia.mp4'
 import LandingCarousel from './LandingCarousel'
 import styled from 'styled-components'; 
 
@@ -7,7 +7,7 @@ import styled from 'styled-components';
 export const LandingOverlay = styled.div`
     height: 100vh;
     width: 100vw;
-    box-shadow: 2px 5px 3px #666;
+    box-shadow: 0px 1px 9px #666;
     position: relative;
     background: rgba(255,255,255,0.5);
 `
