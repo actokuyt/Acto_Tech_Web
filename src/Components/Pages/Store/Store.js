@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import img from '../../../Media/delivery.jpg'
+import img from '../../../Media/store.jpg'
 
 
 const Container = styled.div`
@@ -25,16 +25,16 @@ const Card = styled.div`
     }
 `
 
-export class PickUp extends Component {
+export class Store extends Component {
     render() {
         return (
             <Container >
                 <Card>
-                    <h1>pickup</h1>
+                    <h1>Store</h1>
                 </Card>
             </Container>
         )
     }
 }
 
-export default PickUp
+export default Store
