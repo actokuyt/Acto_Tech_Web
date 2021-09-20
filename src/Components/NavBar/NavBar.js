@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, } from 'react-router-dom';
 import {Nav,NavLink,Bars,NavMenu, } from './NavBarElements';
 import MobileNavBarMenu from './MobileNavBarMenu' 
-import logo from '../../Media/logo.svg'
+import logo from '../../Media/logo.png'
 
 
 
@@ -22,7 +22,7 @@ export class NavBar extends Component {
       <Router>
         <Nav> 
           <NavLink to = 'home'  >
-                <img src={logo} alt = '' style = {{height: '5em',}} />
+                <img src={logo} alt = '' style = {{height: '2.5em',}} />
           </NavLink>
           <NavMenu>
             <NavLink to='/pick-up' activeStyle>
