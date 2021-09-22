@@ -23,6 +23,9 @@ export class NavBar extends Component {
     height: 100%;
     position: absolute;
     right: 0px;
+    @media screen and (max-width: 768px) {
+      width: 60%;
+    }
     `
 
     function MobileNavBarMenu() {
@@ -30,14 +33,23 @@ export class NavBar extends Component {
           <div>
           <MobileNavMenu onClick = {handleBarClick}  >
             <Container>
-              <MobileNavLink to='/pick-up' activeStyle>
-                Pick-up and Delivery
+              <MobileNavLink to='/shop' activeStyle>
+                Shop
+              </MobileNavLink>
+              <MobileNavLink to='/homeService' activeStyle>
+                Home Service
               </MobileNavLink>
               <MobileNavLink to='/contact' activeStyle>
                 Contact
               </MobileNavLink>
               <MobileNavLink to='/about' activeStyle>
                 About
+              </MobileNavLink>
+              <MobileNavLink to='/signIn' activeStyle>
+                Sign In
+              </MobileNavLink>
+              <MobileNavLink to='/signUp' activeStyle>
+                Sign Up
               </MobileNavLink>
             </Container>
           </MobileNavMenu>
@@ -53,6 +65,9 @@ export class NavBar extends Component {
                 <img src={logo} alt = '' style = {{height: '2.5em',}} />
           </NavLink>
           <NavMenu>
+            <NavLink to='/shop' activeStyle>
+                Shop
+            </NavLink>
             <NavLink to='/home' activeStyle>
               Home Service
             </NavLink>
@@ -61,6 +76,12 @@ export class NavBar extends Component {
             </NavLink>
             <NavLink to='/about' activeStyle>
               About
+            </NavLink>
+            <NavLink to='/signIn' activeStyle>
+              Sign In
+            </NavLink>
+            <NavLink to='/signUp' activeStyle>
+              Sign Up
             </NavLink>
           </NavMenu>
           <Bars onClick = {handleBarClick} />
