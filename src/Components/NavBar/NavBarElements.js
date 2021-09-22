@@ -88,9 +88,6 @@ export const MobileNavMenu = styled.div`
     width: 100%;
     background-color: rgba(255 255 255 .9);
   }
-  @media screen and (max-width: 425px) {
-    width: 55%;
-  }
 `; 
 
   
