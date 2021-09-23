@@ -61,7 +61,7 @@ export class NavBar extends Component {
     return (
       <Router>
         <Nav> 
-          <NavLink to = 'home'  >
+          <NavLink to = '/'  >
                 <img src={logo} alt = '' style = {{height: '2.5em',}} />
           </NavLink>
           <NavMenu>

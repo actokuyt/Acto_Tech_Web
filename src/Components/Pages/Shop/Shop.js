@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import img from '../../../Media/store.jpg'
 import { BrowserRouter as Router, } from 'react-router-dom';
-import { NavLink as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Container = styled.div`
